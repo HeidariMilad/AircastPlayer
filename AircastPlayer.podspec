@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "AircastPlayer"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "AircastPlayer SDK"
   spec.description  = <<-DESC
 Using this SDK users can implement Aircast Core player into ther applications.
@@ -20,7 +20,7 @@ Using this SDK users can implement Aircast Core player into ther applications.
   spec.author             = { "Milad" => "milad.heidari@me.com" }
   spec.platform     = :ios
   spec.ios.deployment_target = "13.0"
-  spec.source       = { :http => "https://www.dropbox.com/s/etdrhp08jv3w09u/AircastPlayer.zip?dl=1" }
+  spec.source       = { :http => "https://aircast-artifact.s3.us-west-1.amazonaws.com/AircastPlayer.zip" }
   #spec.frameworks = "AircastPlayer"
   #spec.ios.vendored_frameworks = "AircastPlayer.framework"
 
