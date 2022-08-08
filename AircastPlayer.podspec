@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "AircastPlayer"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "AircastPlayer SDK"
   spec.description  = <<-DESC
 Using this SDK users can implement Aircast Core player into ther applications.
