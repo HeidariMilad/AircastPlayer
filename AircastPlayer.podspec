@@ -21,12 +21,7 @@ Using this SDK users can implement Aircast Core player into ther applications.
   spec.platform     = :ios
   spec.ios.deployment_target = "13.0"
   spec.source       = { :http => "https://aircast-artifact.s3.us-west-1.amazonaws.com/AircastPlayer.zip" }
-  spec.frameworks = "AircastPlayer"
-  spec.ios.vendored_frameworks = "AircastPlayer.xcframework"
-  spec.frameworks = "Libavcodec", "Libavfilter", "Libavformat", "Libavutil", "Libcrypto", "Libssl", "Libsrt", "Libswresample", "Libswscale"
-  
-  spec.xcconfig = {
-      'FRAMEWORK_SEARCH_PATH' => '$(inherited) "$(PODS_ROOT)/AircastPlayer.xcframework"
-  }
+  spec.frameworks = 'AircastPlayer', 'Libavcodec', 'Libavfilter', 'Libavformat', 'Libavutil', 'Libcrypto', 'Libssl', 'Libsrt', 'Libswresample', 'Libswscale'
+  spec.ios.vendored_frameworks = 'AircastPlayer.xcframework', 'Libavcodec.xcframework', 'Libavfilter.xcframework', 'Libavformat.xcframework', 'Libavutil.xcframework', 'Libcrypto.xcframework', 'Libssl.xcframework', 'Libsrt.xcframework', 'Libswresample.xcframework', 'Libswscale.xcframework'
   
 end
