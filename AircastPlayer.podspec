@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "AircastPlayer"
-  spec.version      = "0.0.6"
+  spec.version      = "0.0.8"
   spec.summary      = "AircastPlayer SDK"
   spec.description  = <<-DESC
 Using this SDK users can implement Aircast Core player into ther applications.
@@ -23,10 +23,10 @@ Using this SDK users can implement Aircast Core player into ther applications.
   spec.source       = { :http => "https://aircast-artifact.s3.us-west-1.amazonaws.com/AircastPlayer.zip" }
   
   spec.ios.vendored_frameworks = 'AircastPlayer.xcframework', 'Libavcodec.xcframework', 'Libavfilter.xcframework', 'Libavformat.xcframework', 'Libavutil.xcframework', 'Libcrypto.xcframework', 'Libssl.xcframework', 'Libsrt.xcframework', 'Libswresample.xcframework', 'Libswscale.xcframework'
-      
+  
+  
   spec.xcconfig = {
-      'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/AircastPlayer"/**',
-      'OTHER_LDFLAGS' => '-ObjC -l"c++" -l"bz2" -l"iconv" -l"xml2" -l"z" -framework "AircastPlayer" -framework "Libavcodec" -framework "Libavfilter" -framework "Libavformat" -framework "Libavutil" -framework "Libcrypto" -framework "Libssl" -framework "Libsrt" -framework "Libswresample" -framework "Libswscale" -framework "VideoToolbox" -weak_framework "MetalKit"'
+      'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "$(PODS_ROOT)/AircastPlayer.xcframework"',
   }
 
 end
