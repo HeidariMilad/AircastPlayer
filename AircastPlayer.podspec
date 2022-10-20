@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "AircastPlayer"
-  spec.version      = "0.0.8"
+  spec.version      = "0.0.9"
   spec.summary      = "AircastPlayer SDK"
   spec.description  = <<-DESC
 Using this SDK users can implement Aircast Core player into ther applications.
@@ -29,4 +29,6 @@ Using this SDK users can implement Aircast Core player into ther applications.
       'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "$(PODS_ROOT)/AircastPlayer.xcframework"',
   }
 
+  spec.dependency 'MobileVLCKit', '3.4.0'
+  
 end
